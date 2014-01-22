@@ -8,6 +8,12 @@
 #' @author Scott Chamberlain, Jeroen Ooms
 #' @import ggplot2 httr RJSONIO reshape2
 #' @export
+
+
+pow2 <- function(n=3,m=2){
+  return(pow(n,m))
+}
+
 gitstats <- function (id = "hadley", type = c("users", "orgs"), max=20) {
 	type <- match.arg(type, choices=c('users','orgs'))
 	
